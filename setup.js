@@ -27,10 +27,6 @@ module.exports = {
       pattern: /counterActions/
     },
     {
-      file: 'app/app.global.css',
-      clear: true
-    },
-    {
       file: 'app/routes.js',
       pattern: /CounterPage/
     },
