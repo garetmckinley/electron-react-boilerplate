@@ -1,8 +1,8 @@
 // @flow
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import A from './Common/A';
-import Container from './Common/Container';
+import A from '../Common/A';
+import Container from '../Common/Container';
 
 const Title = styled.h2`
   color: #fff;

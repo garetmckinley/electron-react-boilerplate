@@ -1,8 +1,8 @@
 // @flow
 import React, { Component, PropTypes } from 'react';
 import styled from 'styled-components';
-import A from './Common/A';
-import Button from './Common/Button';
+import A from '../Common/A';
+import Button from '../Common/Button';
 
 const BackButton = styled.div`
   position: absolute;
