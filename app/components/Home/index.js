@@ -14,8 +14,8 @@ function Home() {
       <Header fontSize={3}>Home</Header>
       <A to="/counter">to Counter</A>
       <Row>
-        <Column><Button url="/counter">Counter</Button></Column>
-        <Column><Button>Settings</Button></Column>
+        <Column><Button fontSize="3em" url="/counter">Counter</Button></Column>
+        <Column><Button fontSize="3em">Settings</Button></Column>
       </Row>
     </Container>
   );
