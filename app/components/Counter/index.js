@@ -1,6 +1,7 @@
 // @flow
 import React, { Component, PropTypes } from 'react';
 import styled from 'styled-components';
+
 import A from '../Common/A';
 import Button from '../Common/Button';
 
@@ -8,16 +9,6 @@ const BackButton = styled.div`
   position: absolute;
 `;
 
-const ButtonGroup = styled.div`
-  margin: 0 auto;
-  position: absolute;
-  text-align: center;
-  bottom: 20px;
-  width: 100%;
-`;
-
-const Container = styled.div`
-`;
 
 const CounterLabel = styled.div`
   font-size: 10rem;
