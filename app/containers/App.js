@@ -5,6 +5,7 @@ import { injectGlobal } from 'styled-components';
 
 injectGlobal`
   body {
+    margin: 0;
     position: relative;
     color: white;
     height: 100vh;
