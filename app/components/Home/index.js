@@ -1,5 +1,6 @@
 // @flow
 import React, { Component } from 'react';
+
 import A from '../Common/A';
 import Button from '../Common/Button';
 import Column from '../Common/Column';
