@@ -40,16 +40,24 @@ class Counter extends Component {
         <CounterLabel className="counter">
           {counter}
         </CounterLabel>
-        <ButtonGroup>
-          <Button onClick={increment}>
-            <i className="fa fa-plus" />
-          </Button>
-          <Button onClick={decrement}>
-            <i className="fa fa-minus" />
-          </Button>
-          <Button onClick={incrementIfOdd}>odd</Button>
-          <Button onClick={() => incrementAsync()}>async</Button>
-        </ButtonGroup>
+        <Row>
+          <Column>
+            <Button onClick={increment}>
+              <i className="fa fa-plus" />
+            </Button>
+          </Column>
+          <Column>
+            <Button onClick={decrement}>
+              <i className="fa fa-minus" />
+            </Button>
+          </Column>
+          <Column>
+            <Button onClick={incrementIfOdd}>odd</Button>
+          </Column>
+          <Column>
+            <Button onClick={() => incrementAsync()}>async</Button>
+          </Column>
+        </Row>
       </Container>
     );
   }
