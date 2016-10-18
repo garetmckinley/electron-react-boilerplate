@@ -1,23 +1,22 @@
 // @flow
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import A from '../Common/A';
+import Button from '../Common/Button';
+import Column from '../Common/Column';
 import Container from '../Common/Container';
-
-const Title = styled.h2`
-  color: #fff;
-  font-size: 5rem;
-  font-weight: bold;
-  letter-spacing: -.025em;
-  margin: 0;
-`;
+import Header from '../Common/Header';
+import Row from '../Common/Row';
 
 export default class Home extends Component {
   render() {
     return (
       <Container>
-        <Title>Home</Title>
+        <Header fontSize={3}>Home</Header>
         <A to="/counter">to Counter</A>
+        <Row>
+          <Column><Button url="/counter">Counter</Button></Column>
+          <Column><Button>Settings</Button></Column>
+        </Row>
       </Container>
     );
   }
