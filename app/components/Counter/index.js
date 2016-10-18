@@ -37,7 +37,7 @@ class Counter extends Component {
             <i className="fa fa-arrow-left fa-3x" />
           </A>
         </BackButton>
-        <CounterLabel>
+        <CounterLabel className="counter">
           {counter}
         </CounterLabel>
         <ButtonGroup>
