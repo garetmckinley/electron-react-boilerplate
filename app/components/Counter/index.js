@@ -4,6 +4,9 @@ import styled from 'styled-components';
 
 import A from '../Common/A';
 import Button from '../Common/Button';
+import Column from '../Common/Column';
+import Container from '../Common/Container';
+import Row from '../Common/Row';
 
 const BackButton = styled.div`
   position: absolute;
