@@ -1,7 +1,60 @@
 // @flow
 import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
-import styles from './Counter.css';
+import styled from 'styled-components';
+
+const A = styled(Link)`
+  color: white;
+  opacity: .75;
+  text-decoration: none;
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+    cursor: pointer;
+  }
+`;
+
+const BackButton = styled.div`
+  position: absolute;
+`;
+
+const ButtonGroup = styled.div`
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  bottom: 20px;
+  width: 100%;
+`;
+
+const Button = styled.div`
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  transition: all .25s;
+
+  &:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+  }
+`;
+
+const Container = styled.div`
+`;
+
+const CounterLabel = styled.div`
+  font-size: 10rem;
+  font-weight: bold;
+  left: 45%;
+  letter-spacing: -.025em;
+  position: absolute;
+  top: 30%;
+`;
 
 class Counter extends Component {
   static propTypes = {
@@ -15,26 +68,26 @@ class Counter extends Component {
   render() {
     const { increment, incrementIfOdd, incrementAsync, decrement, counter } = this.props;
     return (
-      <div>
-        <div className={styles.backButton}>
-          <Link to="/">
+      <Container>
+        <BackButton>
+          <A to="/">
             <i className="fa fa-arrow-left fa-3x" />
-          </Link>
-        </div>
-        <div className={`counter ${styles.counter}`}>
+          </A>
+        </BackButton>
+        <CounterLabel>
           {counter}
-        </div>
-        <div className={styles.btnGroup}>
-          <button className={styles.btn} onClick={increment}>
+        </CounterLabel>
+        <ButtonGroup>
+          <Button onClick={increment}>
             <i className="fa fa-plus" />
-          </button>
-          <button className={styles.btn} onClick={decrement}>
+          </Button>
+          <Button onClick={decrement}>
             <i className="fa fa-minus" />
-          </button>
-          <button className={styles.btn} onClick={incrementIfOdd}>odd</button>
-          <button className={styles.btn} onClick={() => incrementAsync()}>async</button>
-        </div>
-      </div>
+          </Button>
+          <Button onClick={incrementIfOdd}>odd</Button>
+          <Button onClick={() => incrementAsync()}>async</Button>
+        </ButtonGroup>
+      </Container>
     );
   }
 }
