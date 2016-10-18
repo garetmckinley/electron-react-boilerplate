@@ -16,10 +16,7 @@ const BackButton = styled.div`
 const CounterLabel = styled.p`
   font-size: 10rem;
   font-weight: bold;
-  left: 45%;
   letter-spacing: -.025em;
-  position: absolute;
-  top: 30%;
 `;
 
 class Counter extends Component {
