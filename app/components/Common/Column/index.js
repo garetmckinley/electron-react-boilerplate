@@ -15,9 +15,7 @@ function Column({ ...props }) {
 }
 
 Column.propTypes = {
-  children: PropTypes.node.isRequired,
-  color: PropTypes.string,
-  fontSize: PropTypes.number
+  children: PropTypes.node.isRequired
 };
 
 export default Column;
