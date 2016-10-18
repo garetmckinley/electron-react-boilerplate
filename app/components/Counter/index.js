@@ -13,7 +13,7 @@ const BackButton = styled.div`
 `;
 
 
-const CounterLabel = styled.div`
+const CounterLabel = styled.p`
   font-size: 10rem;
   font-weight: bold;
   left: 45%;
